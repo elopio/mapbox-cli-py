@@ -18,4 +18,5 @@ parts:
   mapbox-cli-py:
     source: .
     plugin: python
-    python-version: python3
+    # Using python2 because of http://click.pocoo.org/5/python3/
+    python-version: python2
