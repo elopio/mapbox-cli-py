@@ -12,7 +12,7 @@ confinement: strict
 apps:
   mapbox:
     command: mapbox
-    plugs: [network]
+    plugs: [home, network]
 
 parts:
   mapbox-cli-py:
