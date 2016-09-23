@@ -1,0 +1,21 @@
+name: mapbox
+version: master
+summary: Command line interface to Mapbox Web Services
+description: |
+  The Mapbox web services? APIs allow for programmatic access to Mapbox tools
+  and services. This CLI is for users who want to automate their use of Mapbox
+  APIs without committing to writing a full application with our SDKs.
+
+grade: devel
+confinement: strict
+
+apps:
+  mapbox:
+    command: mapbox
+    plugs: [network]
+
+parts:
+  mapbox-cli-py:
+    source: .
+    plugin: python
+    python-version: python3
